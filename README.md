@@ -3,7 +3,8 @@
 ## **Day 2 - October 11, 2022**
 
 ---
--test
+
+- no progress today :(
 
 ## **Day 1 - October 10, 2022**
 

@@ -31,5 +31,17 @@ function duplicateCount(text){
     }
     return count
 }
+
+function duplicateCount(text){
+    if(text == '') return 0
+    text = text.toLowerCase().split('')
+    let list = {}
+    let count = 0
+    text.forEach(x => { list[x] = (list[x] || 0) + 1; });
+    for(key in list){
+      if(list[key]>1) count++
+    }
+    return count
+}
   
 // elapsed time: ~ 20 minutes
