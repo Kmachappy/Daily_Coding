@@ -1,5 +1,39 @@
 # **Daily Coding**
 
+## **Day 3 - October 12, 2022**
+
+---
+
+Coding Journal
+
+- how to make my code more modular in my projects.
+- how to make my code more readable.
+- short code doesn't mean good code.
+- My short clever code is not always the best code.
+
+Notes
+
+- test
+
+## Problem 1
+
+---
+
+### [**Count the divisors of a number**](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript)
+
+### [**Code to Solution**](codewars/Count_the_divisors_of_a_number.js)
+
+Level: 7 kyu
+
+Time to complete: ~5 minutes
+
+### thoughts
+
+- I used a for loop to loop through the numbers from 1 to the number passed in as an argument and check if the number is divisible by the number in the loop and if it is I add 1 to the count variable and return the count variable at the end of the function after the loop is done.
+
+## Problem 2
+
+
 ## **Day 2 - October 11, 2022**
 
 ---
