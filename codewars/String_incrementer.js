@@ -21,6 +21,29 @@ Attention: If the number has leading zeros the amount of digits should be consid
 
 
 function incrementString (string) {
+    let number = string.match(/[0-9]+$/);
+    
+    if(!number){
+      return string+1
+    }
+    
+    let length = number[0].length
+    string = string.replace(/\d+$/, '');
+    let addition = parseInt(number) + 1
+    addition = addition.toString()
+    
+    if(addition.length !== length){
+      for(let i=addition.length; i<length; i++){
+        addition = "0" + addition      
+      }
+    }
+  
+    return string+addition
+  }
+  
+
+
+function incrementString (string) {
     // I need to get the string
     // I am able to get the number from the string but I loose my zeros
   
