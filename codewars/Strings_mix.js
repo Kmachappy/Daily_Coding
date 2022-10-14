@@ -41,9 +41,84 @@ mix(s1, s2) --> "1:mmmmmm/E:nnnnnn/1:aaaa/1:hhh/2:yyy/2:dd/2:ff/2:ii/2:rr/E:ee/E
 
 */
 
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+// second attempt
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+const Occurances = (map, string, id) =>{
+    // we take in our map, our string, and the stringId
+    // iterate through every lowercase letter in the string
+    string.match(/[a-z]/g).forEach((letter)=>{  
+      // the value for each letter will be an object with key values
+      // 'id' : occurances 
+      // max : of both occurances
+      // prefix : 1 or 2 or =
+      
+      //if key doesn't exist just give me empty object
+      const format = map.get(letter) || {}
+      
+      // if format[id] exists then you get back the value of the key
+      // if not it then creates and entry of the key 
+      // and the value which is 0 when created + 1
+      format[id] = (format[id] || 0) + 1
+      //  this creates an entry in the object value 
+      // max: ( format 1 or format 2 which ever occurances are bigger)
+      format.max = Math.max(format[1] || 0, format[2] || 0);
+      // if the values of occurances of 1 and 2 are the same give
+      // prefix '='
+      if(format[1] === format[2]){
+        format.prefix = '='
+      }else{
+        // if format 1 > format 2
+        // give prefix 1 else prefix 2
+        format.prefix = (format[1] || 0) > (format[2] || 0) ? 1 : 2;
+      }
+      // key = letter
+      // value = 
+      map.set(letter, format)
+      
+      
+    })
+  //     console.log(map)
+  //   for([k,v] of map){
+  //     console.log(k,'@@@@ß',v)
+  //   }
+    return map
+    
+  }
+  
+  function mix(s1, s2) {
+    let map = Occurances(new Map(), s1, 1)
+    map = Occurances(map, s2, 2)
+    const sorted = [...map.entries()].sort((a,b)=>{
+      if (a[1].max < b[1].max) {
+        return 1;
+      }
+      
+      if(a[1].max === b[1].max) {
+        if((parseInt(a[1].prefix) || 3)> (parseInt(b[1].prefix)|| 3)){
+          return 1;
+        }
+      
+        if(a[1].prefix === b[1].prefix){
+          return a[0].localeCompare(b[0])
+        }
+      }
+      return -1;
+    }).filter((keyVal) => keyVal[1].max >1)
+    console.log(sorted)
+    
+    return sorted.map(e=>`${e[1].prefix}:${e[0].repeat(e[1].max)}`).join('/')
+  }
 
 
-
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+// first attempt
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
 let removeChar=(string)=>{
     string = string.replace(/[A-Z]/,'')
