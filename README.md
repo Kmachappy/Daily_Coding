@@ -12,6 +12,16 @@
 
 ### [**Code to Solution**](codewars/two_to_one.js)
 
+## Problem 2
+
+---
+
+### [**Removing Elements**](https://www.codewars.com/kata/5769b3802ae6f8e4890009d2/train/javascript)
+
+### [**Code to Solution**](codewars/Removing_elements.js)
+
+---
+
 ## **Day 5 - October 14,2022**
 
 ## Coding Journal
