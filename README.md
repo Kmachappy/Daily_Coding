@@ -1,19 +1,64 @@
 # **Daily Coding**
 
+## **Day 6 - October 15,2022**
+---
+
+
+
+
+## **Day 5 - October 14,2022**
+
+## Coding Journal
+
+- Continuing on yesterdays problems I kept thinking of ways on how to properly sort my data
+- I wasn't able to think of a solution until i read a solution that broke down the problem into smaller parts
+- gather the data and sort it
+
+## Problem 1
+
+---
+
+### [**String Mix**](https://www.codewars.com/kata/5629db57620258aa9d000014/train/javascript)
+
+### [**Code to Solution**](codewars/Strings_mix.js)
+
+## **Day 4 - October 13,2022**
+
+---
+
+## Coding Journal
+
+- took 4 hours trying to solve todays problems
+- learned a lot about regex and different ways to solve problems with it 
+- I am able to solve some issues but im over thinking it and making it more complicated than it needs to be
+- i'm not sorting the data correctly and got stuck on that for a while
+- was not able to solve it but I will try again tomorrow
+
+## Problem 1
+
+---
+
+### [**String Mix**](https://www.codewars.com/kata/5629db57620258aa9d000014/train/javascript)
+
+### [**Code to Solution**](codewars/Strings_mix.js)
+
 ## **Day 3 - October 12, 2022**
 
 ---
 
-Coding Journal
+## Coding Journal
 
 - how to make my code more modular in my projects.
 - how to make my code more readable.
 - short code doesn't mean good code.
 - My short clever code is not always the best code.
 
-Notes
+## Progress
 
-- test
+- Continue to work on my project.
+- completed nav and footer responsive on mobile.
+- finishing up carousel.
+- next is finishing the landing page which should take a couple of hours.
 
 ## Problem 1
 
