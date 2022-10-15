@@ -1,10 +1,16 @@
 # **Daily Coding**
 
 ## **Day 6 - October 15,2022**
+
 ---
 
+## Problem 1
 
+---
 
+### [**Two to One**](https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript)
+
+### [**Code to Solution**](codewars/two_to_one.js)
 
 ## **Day 5 - October 14,2022**
 
